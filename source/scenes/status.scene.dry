@@ -103,8 +103,8 @@ Economic growth: [+ economic_growth_2 +]%
 
 @paramilitaries
 on-arrival: {!
-if (Q.rb_strength) {
-    Q.rb_strength_2 = Q.rb_strength.toFixed(1);
+if (Q.inla_strength) {
+    Q.inla_strength_2 = Q.inla_strength.toFixed(1);
 }
 if (Q.rfb_strength) {
     Q.rfb_strength_2 = Q.rfb_strength.toFixed(1);
@@ -119,9 +119,9 @@ if (Q.sa_strength) {
 
 = Paramilitaries
 
-{!<span class="tooltip-text" title="The Reichsbanner Schwarz-Rot-Gold is a popular organization for defending democracy, mostly affiliated with the SPD.">Reichsbanner</span>!} Strength: [+ rb_strength_2 +] thousand
+{!<span class="tooltip-text" title="The Irish National Liberation Army is our paramilitary organisation that fights for a 32 county democratic republic.">INLA</span>!} Strength: [+ inla_strength_2 +] thousand
 
-Reichsbanner Militarization: [+ rb_militancy : militancy +]
+INLA Militarization: [+ inla_militancy : militancy +]
 
 {!<span class="tooltip-text" title="The RFB (Rotfrontkämpferbund) is a communist group associated with the KPD.">RFB</span>!} Strength: [+ rfb_strength_2 +] thousand
 
