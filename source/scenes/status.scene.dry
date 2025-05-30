@@ -109,11 +109,14 @@ if (Q.inla_strength) {
 if (Q.PIRA_strength) {
     Q.PIRA_strength_2 = Q.PIRA_strength.toFixed(1);
 }
-if (Q.sh_strength) {
-    Q.sh_strength_2 = Q.sh_strength.toFixed(1);
+if (Q.OIRA_strength) {
+    Q.OIRA_strength_2 = Q.OIRA_strength.toFixed(1);
 }
-if (Q.sa_strength) {
-    Q.sa_strength_2 = Q.sa_strength.toFixed(1);
+if (Q.UDA_strength) {
+    Q.UDA_strength_2 = Q.UDA_strength.toFixed(1);
+}
+if (Q.UVF_strength) {
+    Q.UVF_strength_2 = Q.UVF_strength.toFixed(1);
 }
 !}
 
