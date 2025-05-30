@@ -106,7 +106,7 @@ Economic growth: [+ economic_growth_2 +]%
 
 {!<span class="tooltip-text" title="Labour's goal is economic reform and benefits for organized workers. They consist primarily of trade union officials and their supporters.">Labour</span>!} strength: [+ labor_strength : strength +], dissent: [+ labor_dissent : dissent +]
 
-{!<span class="tooltip-text" title="The reformists are interested in parliamentary participation in the south, and the democratisation of the north to allow for a gradual approach to socialism.">Reformist</span>!} strength: [+ reformist_strength : strength +], dissent: [+ reformist_dissent : dissent +]
+{!<span class="tooltip-text" title="The reformists are interested in taking Leinster House and the democratisation of the north to allow for a gradual approach to socialism.">Reformist</span>!} strength: [+ reformist_strength : strength +], dissent: [+ reformist_dissent : dissent +]
 
 [? if neorevisionism > 0 : Neorevisionist strength: [+ neorevisionist_strength : strength +], dissent: [+ neorevisionist_dissent : dissent +] ?]
 
