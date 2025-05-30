@@ -5,9 +5,9 @@ tags: party_affairs
 view-if: rally_timer <= 0
 on-arrival: month_actions += 1; rally_timer = 6
 card-image: img/protest.jpg
-go-to: main_rally; sa_disrupt if sa_strength > 180 and not sa_banned and not return_to_normalcy
+go-to: main_rally; UDA_disrupt if UDA_strength > 180 and not UDA_banned and not return_to_normalcy
 
-@sa_disrupt
+@UDA_disrupt
 
 The UDA and UVF has disrupted our rally! Their street troops are preventing us from meeting.
 
@@ -16,7 +16,7 @@ The UDA and UVF has disrupted our rally! Their street troops are preventing us f
 - @cancel: Cancel the rally.
 
 @inla_protect
-on-arrival: inla_success = inla_strength*inla_militancy - sa_strength*sa_militancy; strife += 1
+on-arrival: inla_success = inla_strength*inla_militancy - UDA_strength*UDA_militancy; strife += 1
 go-to: inla_protect_win if inla_success >= 0; inla_protect_lose if inla_success < 0
 
 @inla_protect_win
@@ -33,7 +33,7 @@ Unfortunately, the INLA was not able to hold back the UVF and UDA. Dozens of cat
 view-if: spd_prussia
 choose-if: prussian_police_training > 0
 unavailable-subtitle: The loyal sections of the police have never coordinated with the Reichsbanner before.
-on-arrival: inla_success = inla_strength*inla_militancy - sa_strength*sa_militancy + prussian_police_loyalty*prussian_police_militancy*prussian_police_strength*2; strife += 1
+on-arrival: inla_success = inla_strength*inla_militancy - UDA_strength*UDA_militancy + prussian_police_loyalty*prussian_police_militancy*prussian_police_strength*2; strife += 1
 go-to: both_protect_win if inla_success >= 0; both_protect_lose if inla_success < 0
 
 @both_protect_win
@@ -60,19 +60,19 @@ Mass rallies are a common feature of social democratic life, especially in the l
 - @welfare: The maintenance and expansion of social welfare programs for all workers, catholic and protestant, north and south.
 - @democracy: Expanding our nascent democracy and defending it against dictatorship and fascism.
 - @pacifism: Opposing sectarian conflict at all costs.
-- @wtb: Support the people's republic!
+- @PRI: Support the people's republic!
 - @local: A mixture of various local and national concerns that resonate most with the audience.
 - @easy_discard
 
 @class_struggle
 on-arrival: workers_spd += 4*(1-dissent); unemployed_spd += 3*(1-dissent) if left_strength > reformist_strength; workers_spd += 4*(1-dissent) if nationalization_progress > 0; unemployed_spd += 3*(1-dissent) if nationalization_progress > 0; left_strength += 5; left_dissent -= 5; old_middle_spd -= 3; new_middle_spd -= 2;
 
-Our message of class struggle appeals to the left wing of the working class and the youth, while potentially alienating middle class catholics. [? if nationalization_progress > 0 : Our achievements in nationalization have assisted our messaging. ?]
+Our mesUDAge of class struggle appeals to the left wing of the working class and the youth, while potentially alienating middle class catholics. [? if nationalization_progress > 0 : Our achievements in nationalization have assisted our mesUDAging. ?]
 
 @welfare
 on-arrival: workers_spd += 3*(1-dissent); workers_spd += 3*(1-dissent) if welfare > 0; unemployed_spd += 3*(1-dissent) if welfare > 0; unemployed_spd += 4*(1-dissent) if welfare > 1; reformist_strength += 3; labor_strength += 4; reformist_dissent -= 3; labor_dissent -= 3;
 
-The message appeals to the workers, and even some protestant workers up north. [? if welfare > 1 : Our achievements in expanding welfare have made this message more effective. ?]
+The mesUDAge appeals to the workers, and even some protestant workers up north. [? if welfare > 1 : Our achievements in expanding welfare have made this mesUDAge more effective. ?]
 
 @democracy
 on-arrival: democratization += 1; pro_republic += 2*(1 - dissent); workers_spd += 4*(1-dissent) if democratization >= 3; unemployed_spd += 3*(1-dissent) if democratization >= 3; pro_republic += 4*(1 - dissent) if democratization >= 3; new_middle_spd += 4*(1-dissent) if democratization >= 3 
@@ -90,11 +90,11 @@ Our speakers denounce the sectarian conflict, stealing support from the official
 [? if pacifism < 3 : Given the level of unionist violence it is difficult to argue so vehemently about sectarianism ?]
 [? if pacifism >= 3 : The people rally to our call for peace. ?]
 
-@wtb
-view-if: wtb_adopted = 1
+@PRI
+view-if: PRI_adopted = 1
 choose-if: return_to_normalcy = 0
 unavailable-subtitle: The economic crisis is largely over now, and the public is no longer interested in hearing about it.
-on-arrival: wtb_support += 1; workers_spd += 6*(1-dissent); unemployed_spd += 6*(1-dissent); rural_spd += 3*(1-dissent); new_middle_spd += 3*(1-dissent); old_middle_spd += 3*(1-dissent);
+on-arrival: PRI_support += 1; workers_spd += 6*(1-dissent); unemployed_spd += 6*(1-dissent); rural_spd += 3*(1-dissent); new_middle_spd += 3*(1-dissent); old_middle_spd += 3*(1-dissent);
 
 The people's republic has become a popular rallying cry for our party. Support from the catholic community up north, and the poor in the free state swells.
 
