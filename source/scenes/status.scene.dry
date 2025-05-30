@@ -135,15 +135,19 @@ Stahlhelm Militarization: [+ sh_militancy : militancy +]
 
 SA Militarization: [+ sa_militancy : militancy +]
 
-= Official military/paramilitaries
+= State Forces
 
-Reichswehr: [+ reichswehr_strength +] thousand troops.
+British Armed Forces in Ireland: [+ reichswehr_strength +] thousand troops.
 
-Reichswehr Loyalty: [+ reichswehr_loyalty : loyalty +]
+British Armed Forces Relations: [+ reichswehr_loyalty : loyalty +]
 
-Prussian police: [+ prussian_police_strength +] thousand members.
+Royal Ulster Constabulary: [+ prussian_police_strength +] thousand members.
 
-Prussian police loyalty: [+ prussian_police_loyalty : loyalty +]
+Royal Ulster Constabulary loyalty: [+ prussian_police_loyalty : loyalty +]
+
+Placeholder: An Garda Síochána
+
+Placeholder: Irish Defence Forces
 
 [? if spd_in_government : Interior police loyalty: [+ interior_police_loyalty : loyalty +] ?]
 
