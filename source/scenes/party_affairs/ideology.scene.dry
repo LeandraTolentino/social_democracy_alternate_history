@@ -14,10 +14,10 @@ The SPD is torn between many different ideological currents. What should be our 
 
 [? if ideology != 0 : We have previously chosen a [+ ideology +] ideology. Changing it will likely have drawbacks. ?]
 
-- @class_struggle: Class struggle and preparing the proletariat for the revolution are our primary goals.
-- @centrist: The Center Marxism of Karl Kautsky remains the best way to resolve our internal contradictions.
-- @labor: We should work with the trade unions to improve the lives of workers.
-- @reform: Following Eduard Bernstein, we should work for ethical socialism, strengthen democracy, and expand the party's electorate.
+- @class_struggle: Class struggle and preparing the proletariat for the revolution north and south.
+- @anti_imperialist: The formation of an anti-imperialist broad front consisting of workers, native bourgeoisie and all those who wish for an end of imperial domination over Ireland. Our goal is to establish a secular, democratic 32 county republic.
+- @labor: We should work with the trade unions to improve the lives of workers, north and south.
+- @reform: We shall seek conquest of parliament north and south to begin a gradual transition to socialism.
 - @easy_discard
 
 @class_struggle
@@ -29,9 +29,9 @@ if (Q.ideology && Q.ideology != "left") {
 go-to: changed if changed = 1
 on-departure: ideology = "left"; left_strength += 10; communist_coalition += 1; left_dissent -= 5; z_relation -= 3; dvp_relation -= 5; nationalization_support += 1; kpd_relation += 3
 
-The radical left of the party supports a course of class struggle, and potentially a reconcilliation with the Communists.
+This gains us some support amongst workers north and south, but many Catholics feel there are more pressing concerns. This move has led to an influx of members of the revolutionary left and helps us build bridges with People's Democracy and the Socialist Workers Movement.
 
-@centrist
+@anti_imperialist
 on-arrival: {!
 if (Q.ideology && Q.ideology != "centrist") {
     Q.changed = 1;
@@ -40,7 +40,7 @@ if (Q.ideology && Q.ideology != "centrist") {
 go-to: changed if changed = 1
 on-departure: ideology = "centrist"; center_strength += 10; center_dissent -= 10; left_dissent -= 5; reformist_dissent -= 5
 
-The Center Marxists, represented by Kautsky and Hilferding, support a middle course of preparing for revolution while building up the consciousness of the working class.
+This move gains us support from the Catholic populace, especially Catholic workers, as well as traditional republicans. Our relation with the provisionals, and other republican groups improves.
 
 @labor
 on-arrival: {!
@@ -51,7 +51,7 @@ if (Q.ideology && Q.ideology != "labor") {
 go-to: changed if changed = 1
 on-departure: ideology = "labor"; labor_strength += 10; wtb_support += 1; labor_dissent -= 5; kpd_relation -= 3
 
-The labor wing of the party supports continued particpation in government in order to provide benefits to the workers, and the creation of public works programs for employment.
+This move gains us the support of workers north and south, but has alienated some republicans and middle class Catholics.
 
 @reform
 on-arrival: {!
@@ -62,7 +62,7 @@ if (Q.ideology && Q.ideology != "reformist") {
 go-to: changed if changed = 1
 on-departure: ideology = "reformist"; reformist_strength += 10; democratization += 1; reformist_dissent -= 5; z_relation += 5; dvp_relation += 5; kpd_relation -= 8; moderate_plan_support += 1
 
-The reformist wing of the party seeks to preserve the Republic and the democratic system of government, and is most supportive of coalitions with the other pro-democracy parties.
+This move has garnered us support down south, and from the reformist wing. However, it has alienated both traditional republicans, and the Communist left. Some in the party question why we split from the Officials to begin with.
 
 @changed
 on-arrival: left_dissent += 5; center_dissent += 5; labor_dissent += 5; reformist_dissent += 5
