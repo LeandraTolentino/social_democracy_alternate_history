@@ -151,7 +151,7 @@ An Garda Síochána loyalty: [+ GA_loyalty : loyalty +]
 
 Irish Defence Forces: [+ IDF_strength +] thousand troops.
 
-British Armed Forces Relations: [+ IDF_loyalty : loyalty +]
+Irish Defence Forces Relations: [+ IDF_loyalty : loyalty +]
 
 [? if spd_in_government : Interior police loyalty: [+ interior_police_loyalty : loyalty +] ?]
 
