@@ -76,7 +76,7 @@ Economic growth: [+ economic_growth_2 +]%
 = Inter-party Relations
 
 
-{!<span class="tooltip-text" title="Ulster Unionist Party>UUP</span>!}: [+ uup_relation : relationships +]
+{!<span class="tooltip-text" title="Ulster Unionist Party">UUP</span>!}: [+ uup_relation : relationships +]
 
 {!<span class="tooltip-text" title="Democratic Unionist Party">UDA</span>!}: [+ dup_relation : relationships +]
 
