@@ -137,13 +137,13 @@ SA Militarization: [+ sa_militancy : militancy +]
 
 = State Forces
 
-British Armed Forces in Ireland: [+ reichswehr_strength +] thousand troops.
+British Armed Forces in Ireland: [+ BAF_strength +] thousand troops.
 
-British Armed Forces Relations: [+ reichswehr_loyalty : loyalty +]
+British Armed Forces Relations: [+ BAF_loyalty : loyalty +]
 
-Royal Ulster Constabulary: [+ prussian_police_strength +] thousand members.
+Royal Ulster Constabulary: [+ ruc_strength +] thousand members.
 
-Royal Ulster Constabulary loyalty: [+ prussian_police_loyalty : loyalty +]
+Royal Ulster Constabulary loyalty: [+ ruc_loyalty : loyalty +]
 
 Placeholder: An Garda Síochána
 
