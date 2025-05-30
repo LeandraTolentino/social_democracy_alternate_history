@@ -76,27 +76,37 @@ Economic growth: [+ economic_growth_2 +]%
 = Inter-party Relations
 
 
-{!<span class="tooltip-text" title="Center Party">Z</span>!}: [+ z_relation : relationships +]
+{!<span class="tooltip-text" title="Ulster Unionist Party>UUP</span>!}: [+ uup_relation : relationships +]
 
-{!<span class="tooltip-text" title="German Democratic Party">!}[? if not ddp_name: DDP?][? if ddp_name != 0 : [+ ddp_name +]?]{!</span>!}: [+ ddp_relation : relationships +]
+{!<span class="tooltip-text" title="Democratic Unionist Party">UDA</span>!}: [+ dup_relation : relationships +]
 
-{!<span class="tooltip-text" title="German People's Party">DVP</span>!}: [+ dvp_relation : relationships +]
+{!<span class="tooltip-text" title="Vanguard">Vanguard</span>!}: [+ vanguard_relation : relationships +]
 
-{!<span class="tooltip-text" title="Communist Party of Germany">KPD</span>!}: [+ kpd_relation : relationships +]
+{!<span class="tooltip-text" title="Social Democratic Labour Party">SDLP</span>!}: [+ sdlp_relation : relationships +]
 
-{!<span class="tooltip-text" title="German National People's Party">DNVP</span>!}: [+ dnvp_relation : relationships +]
+{!<span class="tooltip-text" title="Alliance">Alliance</span>!}: [+ alliance_relation : relationships +]
 
-{!<span class="tooltip-text" title="National-Socialist German Worker's Party (Nazis)">NSDAP</span>!}: [+ nsdap_relation : relationships +]
+{!<span class="tooltip-text" title="Provisional Sinn Féin">PSF</span>!}: [+ psf_relation : relationships +]
+
+{!<span class="tooltip-text" title="Official Sinn Féin">OSF</span>!}: [+ psf_relation : relationships +]
+
+{!<span class="tooltip-text" title="Fianna Fáil">FF</span>!}: [+ ff_relation : relationships +]
+
+{!<span class="tooltip-text" title="Fine Gael">FG</span>!}: [+ fg_relation : relationships +]
+
+{!<span class="tooltip-text" title="Labour Party">LB</span>!}: [+ lb_relation : relationships +]
+
+{!<span class="tooltip-text" title="The Groups of the New Left">NL</span>!}: [+ lb_relation : relationships +]
 
 = Internal Factions of the SPD
 
-{!<span class="tooltip-text" title="The Left is interested in radical, transformative policies and cooperation with the KPD.">Left</span>!} strength: [+ left_strength : strength +], dissent: [+ left_dissent : dissent +]
+{!<span class="tooltip-text" title="The Communist Left is interested in launching a revolution that sweeps away the governments in the south and north. They seek increased co-operation with new-left groups such as People's Democracy, the Socialist Workers Movement and the numerous Trotskyist groups in Ireland.">Communist Left</span>!} strength: [+ communist_left_strength : strength +], dissent: [+ communist_left_dissent : dissent +]
 
-{!<span class="tooltip-text" title="The Center is a faction of Center Marxists, between reform and revolution.">Center</span>!} strength: [+ center_strength : strength +], dissent: [+ center_dissent : dissent +]
+{!<span class="tooltip-text" title="The Traditionalists are a faction of traditionalist republicans who believe in the necessity of armed struggle. They care primarily about unification, and secondarily about economic questions.">Traditionalists</span>!} strength: [+ trad_strength : strength +], dissent: [+ trad_dissent : dissent +]
 
-{!<span class="tooltip-text" title="Labor's goal is economic reform and benefits for organized workers.">Labor</span>!} strength: [+ labor_strength : strength +], dissent: [+ labor_dissent : dissent +]
+{!<span class="tooltip-text" title="Labour's goal is economic reform and benefits for organized workers. They consist primarily of trade union officials and their supporters.">Labour</span>!} strength: [+ labor_strength : strength +], dissent: [+ labor_dissent : dissent +]
 
-{!<span class="tooltip-text" title="Reformists are pragmatic participants in government, and seek to expand the welfare state and defend democracy.">Reformist</span>!} strength: [+ reformist_strength : strength +], dissent: [+ reformist_dissent : dissent +]
+{!<span class="tooltip-text" title="The reformists are interested in parliamentary participation in the south, and the democratisation of the north to allow for a gradual approach to socialism. >Reformist</span>!} strength: [+ reformist_strength : strength +], dissent: [+ reformist_dissent : dissent +]
 
 [? if neorevisionism > 0 : Neorevisionist strength: [+ neorevisionist_strength : strength +], dissent: [+ neorevisionist_dissent : dissent +] ?]
 
