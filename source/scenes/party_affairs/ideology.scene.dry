@@ -41,6 +41,7 @@ go-to: changed if changed = 1
 on-departure: ideology = "centrist"; center_strength += 10; center_dissent -= 10; left_dissent -= 5; reformist_dissent -= 5
 
 This move gains us support from the Catholic populace, especially Catholic workers, as well as traditional republicans. Our relation with the provisionals, and other republican groups improves. 
+
 @labor
 on-arrival: {!
 if (Q.ideology && Q.ideology != "labor") {
