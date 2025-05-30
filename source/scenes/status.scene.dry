@@ -143,11 +143,15 @@ British Armed Forces Relations: [+ BAF_loyalty : loyalty +]
 
 Royal Ulster Constabulary: [+ ruc_strength +] thousand members.
 
-Royal Ulster Constabulary loyalty: [+ ruc_loyalty : loyalty +]
+Royal Ulster Constabulary Relations: [+ ruc_loyalty : loyalty +]
 
-Placeholder: An Garda Síochána
+An Garda Síochána: [+ GA_strength +] thousand members.
 
-Placeholder: Irish Defence Forces
+An Garda Síochána loyalty: [+ GA_loyalty : loyalty +]
+
+Irish Defence Forces: [+ IDF_strength +] thousand troops.
+
+British Armed Forces Relations: [+ IDF_loyalty : loyalty +]
 
 [? if spd_in_government : Interior police loyalty: [+ interior_police_loyalty : loyalty +] ?]
 
