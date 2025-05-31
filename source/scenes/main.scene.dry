@@ -52,10 +52,17 @@ is-deck: true
 
 - #party_affairs
 
-@govt
-title: Paramilitary Affairs
+@govt1
+title: Government Affairs
 view-if: time >= 6
 card-image: img/reichstag_2.jpg
 is-deck: true
 
 - #govt_affairs
+
+@paramilitary
+title: Paramilitary Affairs
+card-image: img/INLALogo123.jpg
+is-deck: true
+
+- #para_affairs
