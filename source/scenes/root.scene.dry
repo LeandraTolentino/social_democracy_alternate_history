@@ -206,16 +206,29 @@ Q.capital_strike_progress = 0;
 
 Q.budget = 4;
 
-// Proportion of different social groups
-// source: https://surface.syr.edu/cgi/viewcontent.cgi?filename=3&article=1016&context=books&type=additional page 45, table 3.4 - using 1925 figures
-Q.workers = 48; // industry and trade
-Q.old_middle = 13; // "old mittelstand"
-// 16.4 trade & commerce, 6.6 public and private services, 4.4 domestic help
-Q.new_middle = 14; // "new mittelstand"
-Q.rural = 25; // agriculture and forestry employment... but many of those are proletarians so...
-// source: https://surface.syr.edu/cgi/viewcontent.cgi?filename=3&article=1016&context=books&type=additional page 43, table 3.3
-Q.unemployed = 8.6;
-Q.catholics = 30;
+// Proportion of different social groups, there is significant guesswork done here due to lack of useful figures.
+// sources: https://www.statista.com/statistics/384634/religion-of-northern-ireland-residents-census-uk/ and https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS?locations=GB and https://api.parliament.uk/historic-hansard/commons/1975/feb/13/unemployment#:~:text=The%20latest%20unemployment%20figures%20for%20Northern%20Ireland%20are%20for%2013th,which%20straddle%20the%20River%20Bann.
+Q.catholic_workers = 18; // 
+Q.protestant_workers = 31; // 
+Q.other_workers = 8; // other christians, atheist, etc
+Q.catholic_middle_rural = 7.3; // 
+Q.catholic_middle_urban = 1; //
+Q.protestant_middle_rural = 5; //
+Q.protestant_middle_urban = 10; //
+Q.catholic_poor_rural = 9; //
+Q.protestant_poor_rural = 3; //
+Q.north_unemployed = 6.7; //
+Q.north_rich = 1; //
+
+// Proportion of different social groups in the republic, again some guess work has been used
+// sources: https://www.oireachtas.ie/en/debates/debate/dail/1975-12-02/4/#:~:text=The%20unemployment%20rate%20of%209.1,the%20total%20Irish%20labour%20force.
+Q.workers = 45.9; //
+Q.urban_middle = 5; //
+Q.poor_rural = 29; //
+Q.middle_rural = 10; //
+Q.rich = 1 //
+Q.unemployed = 9.1; //
+
 
 // unemployment: 1929 - 13.3, 1930 - 22.7, 1931 - 34.3, 1932 - 43.8 (UVFme source as above)
 
@@ -233,74 +246,269 @@ Q.economic_growth = 4.4;
 Q.economic_expansion = 0;
 
 // quality of life (as % of 1928 - currently unused - should be welfare-adjusted.)
-Q.workers_qol = 100;
-Q.rural_qol = 100;
-Q.unemployed_qol = 100;
-Q.old_middle_qol = 100;
-Q.new_middle_qol = 100;
+Q.catholic_workers.qol = 100; // 
+Q.protestant_workers.qol = 100; // 
+Q.other_workers.qol = 100; // other christians, atheist, etc
+Q.catholic_middle_rural.qol = 100; // 
+Q.catholic_middle_urban.qol = 100; //
+Q.protestant_middle_rural.qol = 100; //
+Q.protestant_middle_urban.qol = 100; //
+Q.catholic_poor_rural.qol = 100; //
+Q.protestant_poor_rural.qol = 100; //
+Q.north_unemployed.qol = 100; //
+Q.north_rich.qol = 100; //
+Q.workers.qol = 100; //
+Q.urban_middle.qol = 100; //
+Q.poor_rural.qol = 100; //
+Q.middle_rural.qol = 100; //
+Q.rich.qol = 100; //
+Q.unemployed.qol = 100; //
 
-Q.classes = ['workers', 'old_middle', 'new_middle', 'rural', 'unemployed', 'catholics'];
-Q.parties = ['spd', 'kpd', 'z', 'ddp', 'dvp', 'dnvp', 'nsdap', 'other'];
+Q.classes = ['catholic_workers', 'protestant_workers', 'other_workers', 'catholic_middle_rural', 'catholic_middle_urban', 'protestant_middle_rural', 'protestant_middle_urban', 'catholic_poor_rural', 'protestant_poor_rural', 'north_unemployed', 'north_rich', 'workers', 'urban_middle', 'poor_rural', 'middle_rural', 'rich', 'unemployed'];
+Q.parties = ['IRSP', 'Provisionals', 'Officials', 'SDLP', 'UUP', 'DUP', 'Vanguard', 'FG', 'FF', 'Labour', 'NILP', 'IRs'];
 
 // TODO: add 'UVFpd' later on
 Q.UVFpd_formed = 0;
 
 // Support for party by social group
 // they don't have to sum to 100 since the electoral calculations will be normalized.
-Q.workers_spd = 60;
-Q.workers_kpd = 20;
-Q.workers_z = 5;
-Q.workers_ddp = 0;
-Q.workers_dvp = 0;
-Q.workers_dnvp = 5;
-Q.workers_nsdap = 0;
-Q.workers_other = 10;
+Q.catholic_workers_IRSP = 1.5;
+Q.catholic_workers_Officials  = 2.5;
+Q.catholic_workers_IRs = 5;
+Q.catholic_workers_provisionals = 35;
+Q.catholic_workers_sdlp = 50;
+Q.catholic_workers_alliance = 5;
+Q.catholic_workers_NILP = 1;
+Q.catholic_workers_UUP = 0;
+Q.catholic_workers_DUP = 0;
+Q.catholic_workers_Vanguard = 0;
+Q.catholic_workers_FG = 0;
+Q.catholic_workers_FF = 0;
+Q.catholic_workers_Labour = 0;
 
-Q.old_middle_spd = 5;
-Q.old_middle_kpd = 0;
-Q.old_middle_z = 5;
-Q.old_middle_ddp= 10;
-Q.old_middle_dvp = 25;
-Q.old_middle_dnvp = 25;
-Q.old_middle_nsdap = 10;
-Q.old_middle_other = 10;
+Q.protestant_workers_IRSP = 0.01;
+Q.protestant_workers_Officials  = 0.80;
+Q.protestant_workers_IRs = 0.04;
+Q.protestant_workers_provisionals = 0.15;
+Q.protestant_workers_sdlp = 1;
+Q.protestant_workers_alliance = 11;
+Q.protestant_workers_NILP = 2;
+Q.protestant_workers_UUP = 36;
+Q.protestant_workers_DUP = 16;
+Q.protestant_workers_Vanguard = 13;
+Q.protestant_workers_FG = 0;
+Q.protestant_workers_FF = 0;
+Q.protestant_workers_Labour = 0;
 
-Q.new_middle_spd = 5;
-Q.new_middle_kpd = 1;
-Q.new_middle_z = 10;
-Q.new_middle_ddp= 25;
-Q.new_middle_dvp = 25;
-Q.new_middle_dnvp = 10;
-Q.new_middle_nsdap = 5;
-Q.new_middle_other = 15;
+Q.other_workers_IRSP = 2;
+Q.other_workers_Officials  = 4;
+Q.other_workers_IRs = 4;
+Q.other_workers_provisionals = 10;
+Q.other_workers_sdlp = 30;
+Q.other_workers_alliance = 25;
+Q.other_workers_NILP = 5;
+Q.other_workers_UUP = 10;
+Q.other_workers_DUP = 4;
+Q.other_workers_Vanguard = 6;
+Q.other_workers_FG = 0;
+Q.other_workers_FF = 0;
+Q.other_workers_Labour = 0;
 
-Q.rural_spd = 10;
-Q.rural_kpd = 0;
-Q.rural_z = 5;
-Q.rural_ddp= 5;
-Q.rural_dvp = 15;
-Q.rural_dnvp = 45;
-Q.rural_nsdap = 5;
-Q.rural_other = 10;
+Q.catholic_middle_rural_IRSP = 0.5;
+Q.catholic_middle_rural_Officials  = 2;
+Q.catholic_middle_rural_IRs = 5;
+Q.catholic_middle_rural_provisionals = 25;
+Q.catholic_middle_rural_sdlp = 55;
+Q.catholic_middle_rural_alliance = 11.5;
+Q.catholic_middle_rural_NILP = 1;
+Q.catholic_middle_rural_UUP = 0;
+Q.catholic_middle_rural_DUP = 0;
+Q.catholic_middle_rural_Vanguard = 0;
+Q.catholic_middle_rural_FG = 0;
+Q.catholic_middle_rural_FF = 0;
+Q.catholic_middle_rural_Labour = 0;
 
-Q.unemployed_spd = 25;
-Q.unemployed_kpd = 55;
-Q.unemployed_z = 1;
-Q.unemployed_ddp = 0;
-Q.unemployed_dvp = 0;
-Q.unemployed_dnvp = 5;
-Q.unemployed_nsdap = 15;
-Q.unemployed_other = 9;
+Q.catholic_middle_urban_IRSP = 1;
+Q.catholic_middle_urban_Officials  = 2;
+Q.catholic_middle_urban_IRs = 4;
+Q.catholic_middle_urban_provisionals = 25;
+Q.catholic_middle_urban_sdlp = 57;
+Q.catholic_middle_urban_alliance = 10;
+Q.catholic_middle_urban_NILP = 1;
+Q.catholic_middle_urban_UUP = 0;
+Q.catholic_middle_urban_DUP = 0;
+Q.catholic_middle_urban_Vanguard = 0;
+Q.catholic_middle_urban_FG = 0;
+Q.catholic_middle_urban_FF = 0;
+Q.catholic_middle_urban_Labour = 0;
 
-Q.catholics_spd = 15;
-Q.catholics_kpd = 2;
-Q.catholics_z = 50;
-Q.catholics_ddp = 0;
-Q.catholics_dvp = 5;
-Q.catholics_dnvp = 5;
-Q.catholics_nsdap = 0;
-Q.catholics_other = 12;
+Q.protestant_middle_rural_IRSP = 0;
+Q.protestant_middle_rural_Officials  = 0;
+Q.protestant_middle_rural_IRs = 1;
+Q.protestant_middle_rural_provisionals = 2;
+Q.protestant_middle_rural_sdlp = 4;
+Q.protestant_middle_rural_alliance = 13;
+Q.protestant_middle_rural_NILP = 2;
+Q.protestant_middle_rural_UUP = 58;
+Q.protestant_middle_rural_DUP = 15;
+Q.protestant_middle_rural_Vanguard = 5;
+Q.protestant_middle_rural_FG = 0;
+Q.protestant_middle_rural_FF = 0;
+Q.protestant_middle_rural_Labour = 0;
 
+Q.protestant_middle_urban_IRSP = 0;
+Q.protestant_middle_urban_Officials  = 0;
+Q.protestant_middle_urban_IRs = 1;
+Q.protestant_middle_urban_provisionals = 2;
+Q.protestant_middle_urban_sdlp = 6;
+Q.protestant_middle_urban_alliance = 18;
+Q.protestant_middle_urban_NILP = 5;
+Q.protestant_middle_urban_UUP = 38;
+Q.protestant_middle_urban_DUP = 20;
+Q.protestant_middle_urban_Vanguard = 10;
+Q.protestant_middle_urban_FG = 0;
+Q.protestant_middle_urban_FF = 0;
+Q.protestant_middle_urban_Labour = 0;
+
+Q.catholic_poor_rural_IRSP = 1;
+Q.catholic_poor_rural_Officials  = 2;
+Q.catholic_poor_rural_IRs = 5;
+Q.catholic_poor_rural_provisionals = 39;
+Q.catholic_poor_rural_sdlp = 42;
+Q.catholic_poor_rural_alliance = 10;
+Q.catholic_poor_rural_NILP = 1;
+Q.catholic_poor_rural_UUP = 0;
+Q.catholic_poor_rural_DUP = 0;
+Q.catholic_poor_rural_Vanguard = 0;
+Q.catholic_poor_rural_FG = 0;
+Q.catholic_poor_rural_FF = 0;
+Q.catholic_poor_rural_Labour = 0;
+
+Q.protestant_poor_rural_IRSP = 0;
+Q.protestant_poor_rural_Officials  = 2;
+Q.protestant_poor_rural_IRs = 1;
+Q.protestant_poor_rural_provisionals = 4;
+Q.protestant_poor_rural_sdlp = 5;
+Q.protestant_poor_rural_alliance = 13;
+Q.protestant_poor_rural_NILP = 4;
+Q.protestant_poor_rural_UUP = 31;
+Q.protestant_poor_rural_DUP = 25;
+Q.protestant_poor_rural_Vanguard = 15;
+Q.protestant_poor_rural_FG = 0;
+Q.protestant_poor_rural_FF = 0;
+Q.protestant_poor_rural_Labour = 0;
+
+Q.north_unemployed_IRSP = 2.5;
+Q.north_unemployed_Officials  = 5.5;
+Q.north_unemployed_IRs = 6;
+Q.north_unemployed_provisionals = 41;
+Q.north_unemployed_sdlp = 36;
+Q.north_unemployed_alliance = 5;
+Q.north_unemployed_NILP = 2;
+Q.north_unemployed_UUP = 0;
+Q.north_unemployed_DUP = 0;
+Q.north_unemployed_Vanguard = 2;
+Q.north_unemployed_FG = 0;
+Q.north_unemployed_FF = 0;
+Q.north_unemployed_Labour = 0;
+
+Q.north_rich_IRSP = 0;
+Q.north_rich=_Officials  = 0;
+Q.north_rich_IRs = 1;
+Q.north_rich_provisionals = 2;
+Q.north_rich_sdlp = 6;
+Q.north_rich_alliance = 20;
+Q.north_rich_NILP = 5;
+Q.north_rich_UUP = 60;
+Q.north_rich_DUP = 5;
+Q.north_rich_Vanguard = 1;
+Q.north_rich_FG = 0;
+Q.north_rich_FF = 0;
+Q.north_rich_Labour = 0;
+
+Q.workers_IRSP = 1.5;
+Q.workers_Officials  = 2.5;
+Q.workers_IRs = 5;
+Q.workers_provisionals = 5;
+Q.workers_sdlp = 0;
+Q.workers_alliance = 0;
+Q.workers_NILP = 0;
+Q.workers_UUP = 0;
+Q.workers_DUP = 0;
+Q.workers_Vanguard = 0;
+Q.workers_FG = 20;
+Q.workers_FF = 31;
+Q.workers_Labour = 35;
+
+Q.urban_middle_IRSP = 1;
+Q.urban_middle_Officials  = 2;
+Q.urban_middle_IRs = 4;
+Q.urban_middle_provisionals = 5;
+Q.urban_middle_sdlp = 0;
+Q.urban_middle_alliance = 0;
+Q.urban_middle_NILP = 0;
+Q.urban_middle_UUP = 0;
+Q.urban_middle_DUP = 0;
+Q.urban_middle_Vanguard = 0;
+Q.urban_middle_FG = 34;
+Q.urban_middle_FF = 29;
+Q.urban_middle_Labour = 25;
+
+Q.poor_rural_IRSP = 1.5;
+Q.poor_rural_Officials  = 1;
+Q.poor_rural_IRs = 5;
+Q.poor_rural_provisionals = 6.5;
+Q.poor_rural_sdlp = 0;
+Q.poor_rural_alliance = 0;
+Q.poor_rural_NILP = 0;
+Q.poor_rural_UUP = 0;
+Q.poor_rural_DUP = 0;
+Q.poor_rural_Vanguard = 0;
+Q.poor_rural_FG = 25;
+Q.poor_rural_FF = 56;
+Q.poor_rural_Labour = 5;
+
+Q.middle_rural_IRSP = 1.5;
+Q.middle_rural_Officials  = 1;
+Q.middle_rural_IRs = 2;
+Q.middle_rural_provisionals = 5;
+Q.middle_rural_sdlp = 0;
+Q.middle_rural_alliance = 0;
+Q.middle_rural_NILP = 0;
+Q.middle_rural_UUP = 0;
+Q.middle_rural_DUP = 0;
+Q.middle_rural_Vanguard = 0;
+Q.middle_rural_FG = 63.5;
+Q.middle_rural_FF = 27;
+Q.middle_rural_Labour = 0;
+
+Q.rich_IRSP = 0;
+Q.rich_Officials  = 0;
+Q.rich_IRs = 2;
+Q.rich_provisionals = 4;
+Q.rich_sdlp = 0;
+Q.rich_alliance = 0;
+Q.rich_NILP = 0;
+Q.rich_UUP = 0;
+Q.rich_DUP = 0;
+Q.rich_Vanguard = 0;
+Q.rich_FG = 56;
+Q.rich_FF = 37;
+Q.rich_Labour = 1;
+
+Q.unemployed_IRSP = 2.5;
+Q.unemployed_Officials  = 8.5;
+Q.unemployed_IRs = 5;
+Q.unemployed_provisionals = 8;
+Q.unemployed_sdlp = 0;
+Q.unemployed_alliance = 0;
+Q.unemployed_NILP = 0;
+Q.unemployed_UUP = 0;
+Q.unemployed_DUP = 0;
+Q.unemployed_Vanguard = 0;
+Q.unemployed_FG = 10;
+Q.unemployed_FF = 21;
+Q.unemployed_Labour = 45;
 
 // Current Reichstag composition
 // % of Reichstag in Jan 1928
