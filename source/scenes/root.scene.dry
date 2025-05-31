@@ -264,7 +264,8 @@ Q.middle_rural.qol = 100; //
 Q.rich.qol = 100; //
 Q.unemployed.qol = 100; //
 
-Q.classes = ['catholic_workers', 'protestant_workers', 'other_workers', 'catholic_middle_rural', 'catholic_middle_urban', 'protestant_middle_rural', 'protestant_middle_urban', 'catholic_poor_rural', 'protestant_poor_rural', 'north_unemployed', 'north_rich', 'workers', 'urban_middle', 'poor_rural', 'middle_rural', 'rich', 'unemployed'];
+Q.classes = ['workers', 'urban_middle', 'poor_rural', 'middle_rural', 'rich', 'unemployed'];
+Q.north_classes = ['catholic_workers', 'protestant_workers', 'other_workers', 'catholic_middle_rural', 'catholic_middle_urban', 'protestant_middle_rural', 'protestant_middle_urban', 'catholic_poor_rural', 'protestant_poor_rural', 'north_unemployed', 'north_rich'];
 Q.parties = ['IRSP', 'Provisionals', 'Officials', 'SDLP', 'UUP', 'DUP', 'Vanguard', 'FG', 'FF', 'Labour', 'NILP', 'IRs'];
 
 // TODO: add 'UVFpd' later on
