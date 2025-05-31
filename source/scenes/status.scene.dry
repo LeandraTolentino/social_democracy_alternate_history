@@ -202,16 +202,20 @@ Others: [+ other_votes +]%
 
 **Detailed results for each demographic**
 
-Workers: SPD: [+ workers_spd_display +]%, Z: [+ workers_z_display +]%, KPD: [+ workers_kpd_display +]%, [? if not ddp_name: DDP?][? if ddp_name != 0 : [+ ddp_name +]?]: [+ workers_ddp_display +]%, DVP: [+ workers_dvp_display +]%; DNVP: [+ workers_dnvp_display +]%, NSDAP: [+ workers_nsdap_display +]%, Others: [+ workers_other_display +]% [? if sapd_formed: SAPD: [+ workers_sapd_display +]% ?]
+Free State:
 
-New Middle Class: SPD: [+ new_middle_spd_display +]%, Z: [+ new_middle_z_display +]%, KPD: [+ new_middle_kpd_display +]%, [? if not ddp_name: DDP?][? if ddp_name != 0 : [+ ddp_name +]?]: [+ new_middle_ddp_display +]%, DVP: [+ new_middle_dvp_display +]%; DNVP: [+ new_middle_dnvp_display +]%, NSDAP: [+ new_middle_nsdap_display +]%, Others: [+ new_middle_other_display +]% [? if sapd_formed: SAPD: [+ new_middle_sapd_display +]% ?]
+Workers: IRSP: [+ workers_IRSP_display +]%, Officials: [+ workers_Officials_display +]%, Provisionals: [+ workers_provisionals_display +]%, Independent Republicans: [+ workers_IR_display +]%; FG: [+ workers_FG_display +]%, FF: [+ workers_FF_display +]%, Labour: [+ workers_labour_display +]% 
 
-Old Middle Class: SPD: [+ old_middle_spd_display +]%, Z: [+ old_middle_z_display +]%, KPD: [+ old_middle_kpd_display +]%, [? if not ddp_name: DDP?][? if ddp_name != 0 : [+ ddp_name +]?]: [+ old_middle_ddp_display +]%, DVP: [+ old_middle_dvp_display +]%; DNVP: [+ old_middle_dnvp_display +]%, NSDAP: [+ old_middle_nsdap_display +]%, Others: [+ old_middle_other_display +]% [? if sapd_formed: SAPD: [+ old_middle_sapd_display +]% ?]
+Urban Middle Class: IRSP: [+ urban_middle_IRSP_display +]%, Officials: [+ urban_middle_Officials_display +]%, Provisionals: [+ urban_middle_provisionals_display +]%, Independent Republicans: [+ urban_middle_IR_display +]%; FG: [+ urban_middle_FG_display +]%, FF: [+ urban_middle_FF_display +]%, Labour: [+ urban_middle_labour_display +]% 
 
-Rural: SPD: [+ rural_spd_display +]%, Z: [+ rural_z_display +]%, KPD: [+ rural_kpd_display +]%, [? if not ddp_name: DDP?][? if ddp_name != 0 : [+ ddp_name +]?]: [+ rural_ddp_display +]%, DVP: [+ rural_dvp_display +]%; DNVP: [+ rural_dnvp_display +]%, NSDAP: [+ rural_nsdap_display +]%, Others: [+ rural_other_display +]% [? if sapd_formed: SAPD: [+ rural_sapd_display +]% ?]
+Small Farmers and Rural labourers: IRSP: [+ poor_rural_IRSP_display +]%, Officials: [+ poor_rural_Officials_display +]%, Provisionals: [+ poor_rural_provisionals_display +]%, Independent Republicans: [+ poor_rural_IR_display +]%; FG: [+ poor_rural_FG_display +]%, FF: [+ poor_rural_FF_display +]%, Labour: [+ poor_rural_labour_display +]% 
 
-Unemployed: SPD: [+ unemployed_spd_display +]%, Z: [+ unemployed_z_display +]%, KPD: [+ unemployed_kpd_display +]%, [? if not ddp_name: DDP?][? if ddp_name != 0 : [+ ddp_name +]?]: [+ unemployed_ddp_display +]%, DVP: [+ unemployed_dvp_display +]%; DNVP: [+ unemployed_dnvp_display +]%, NSDAP: [+ unemployed_nsdap_display +]%, Others: [+ unemployed_other_display +]% [? if sapd_formed: SAPD: [+ unemployed_sapd_display +]% ?]
+Big Farmers: IRSP: [+ middle_rural_IRSP_display +]%, Officials: [+ middle_rural_Officials_display +]%, Provisionals: [+ middle_rural_provisionals_display +]%, Independent Republicans: [+ middle_rural_IR_display +]%; FG: [+ middle_rural_FG_display +]%, FF: [+ middle_rural_FF_display +]%, Labour: [+ middle_rural_labour_display +]% 
 
-Catholics: SPD: [+ catholics_spd_display +]%, Z: [+ catholics_z_display +]%, KPD: [+ catholics_kpd_display +]%, [? if not ddp_name: DDP?][? if ddp_name != 0 : [+ ddp_name +]?]: [+ catholics_ddp_display +]%, DVP: [+ catholics_dvp_display +]%; DNVP: [+ catholics_dnvp_display +]%, NSDAP: [+ catholics_nsdap_display +]%, Others: [+ catholics_other_display +]% [? if sapd_formed: SAPD: [+ catholics_sapd_display +]% ?]
+Industrialists and the Wealthy: IRSP: [+ rich_IRSP_display +]%, Officials: [+ rich_Officials_display +]%, Provisionals: [+ rich_provisionals_display +]%, Independent Republicans: [+ rich_IR_display +]%; FG: [+ rich_FG_display +]%, FF: [+ rich_FF_display +]%, Labour: [+ rich_labour_display +]% 
+
+Unemployed: IRSP: [+ unemployed_IRSP_display +]%, Officials: [+ unemployed_Officials_display +]%, Provisionals: [+ unemployed_provisionals_display +]%, Independent Republicans: [+ unemployed_IR_display +]%; FG: [+ unemployed_FG_display +]%, FF: [+ unemployed_FF_display +]%, Labour: [+ unemployed_labour_display +]% 
+
+The Six Counties:
 
 Support for the Republic: [+ pro_republic_disp +]%
