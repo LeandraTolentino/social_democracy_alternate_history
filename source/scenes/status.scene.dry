@@ -110,9 +110,6 @@ Economic growth: [+ economic_growth_2 +]%
 
 {!<span class="tooltip-text" title="The reformists are interested in taking Leinster House and the democratisation of the north to allow for a gradual approach to socialism.">Reformist</span>!} strength: [+ reformist_strength : strength +], dissent: [+ reformist_dissent : dissent +]
 
-[? if neorevisionism > 0 : Neorevisionist strength: [+ neorevisionist_strength : strength +], dissent: [+ neorevisionist_dissent : dissent +] ?]
-
-
 @paramilitaries
 on-arrival: {!
 if (Q.inla_strength) {
@@ -134,41 +131,41 @@ if (Q.UVF_strength) {
 
 = Paramilitaries
 
-{!<span class="tooltip-text" title="The Irish National Liberation Army is our paramilitary organisation that fights for a 32 county democratic republic.">INLA</span>!} Strength: [+ inla_strength_2 +] thousand
+{!<span class="tooltip-text" title="The Irish National Liberation Army is our paramilitary organisation that fights for a 32 county democratic republic.">INLA</span>!} Strength: [+ inla_strength_2 +] 
 
 INLA Militarization: [+ inla_militancy : militancy +]
 
-{!<span class="tooltip-text" title="The PIRA (Provisional Irish Republican Army) is the paramilitary wing of Provisional Sinn Féin">PIRA</span>!} Strength: [+ PIRA_strength_2 +] thousand
+{!<span class="tooltip-text" title="The PIRA (Provisional Irish Republican Army) is the paramilitary wing of Provisional Sinn Féin">PIRA</span>!} Strength: [+ PIRA_strength_2 +] 
 
 PIRA Militarization: [+ PIRA_militancy : militancy +]
 
-{!<span class="tooltip-text" title="The OIRA (Official Irish Republican Army) is the paramilitary wing of Official Sinn Féin">PIRA</span>!} Strength: [+ OIRA_strength_2 +] thousand
+{!<span class="tooltip-text" title="The OIRA (Official Irish Republican Army) is the paramilitary wing of Official Sinn Féin">PIRA</span>!} Strength: [+ OIRA_strength_2 +] 
 
 OIRA Militarization: [+ OIRA_militancy : militancy +]
 
-{!<span class="tooltip-text" title="The Ulster Defence Association is the main unionist paramilitary association.">UDA</span>!} Strength: [+ sh_strength_2 +] thousand
+{!<span class="tooltip-text" title="The Ulster Defence Association is the main unionist paramilitary association.">UDA</span>!} Strength: [+ sh_strength_2 +] 
 
 UDA Militarization: [+ UDA_militancy : militancy +]
 
-{!<span class="tooltip-text" title="The Ulster Volunteer Force is the second largest unionist paramilitary association, it is primarily made up of working class protestants, unlike the UDA, and operates the elite paramilitary group: Red Hand Commando.">UVF</span>!} Strength: [+ sa_strength_2 +] thousand
+{!<span class="tooltip-text" title="The Ulster Volunteer Force is the second largest unionist paramilitary association, it is primarily made up of working class protestants, unlike the UDA, and operates the elite paramilitary group: Red Hand Commando.">UVF</span>!} Strength: [+ sa_strength_2 +] 
 
 UVF Militarization: [+ UVF_militancy : militancy +]
 
 = State Forces
 
-British Armed Forces in Ireland: [+ BAF_strength +] thousand troops.
+British Armed Forces in Ireland: [+ BAF_strength +] troops.
 
 British Armed Forces Relations: [+ BAF_loyalty : loyalty +]
 
-Royal Ulster Constabulary: [+ ruc_strength +] thousand members.
+Royal Ulster Constabulary: [+ ruc_strength +] members.
 
 Royal Ulster Constabulary Relations: [+ ruc_loyalty : loyalty +]
 
-An Garda Síochána: [+ GA_strength +] thousand members.
+An Garda Síochána: [+ GA_strength +] members.
 
 An Garda Síochána loyalty: [+ GA_loyalty : loyalty +]
 
-Irish Defence Forces: [+ IDF_strength +] thousand troops.
+Irish Defence Forces: [+ IDF_strength +] troops.
 
 Irish Defence Forces Relations: [+ IDF_loyalty : loyalty +]
 
