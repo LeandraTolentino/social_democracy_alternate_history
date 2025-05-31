@@ -204,17 +204,17 @@ Others: [+ other_votes +]%
 
 Free State:
 
-Workers: IRSP: [+ workers_IRSP_display +]%, Officials: [+ workers_Officials_display +]%, Provisionals: [+ workers_provisionals_display +]%, Independent Republicans: [+ workers_IR_display +]%; FG: [+ workers_FG_display +]%, FF: [+ workers_FF_display +]%, Labour: [+ workers_labour_display +]% 
+Workers: IRSP: [+ workers_IRSP +]%, Officials: [+ workers_Officials +]%, Provisionals: [+ workers_provisionals +]%, Independent Republicans: [+ workers_IR +]%; FG: [+ workers_FG +]%, FF: [+ workers_FF +]%, Labour: [+ workers_labour +]% 
 
-Urban Middle Class: IRSP: [+ urban_middle_IRSP_display +]%, Officials: [+ urban_middle_Officials_display +]%, Provisionals: [+ urban_middle_provisionals_display +]%, Independent Republicans: [+ urban_middle_IR_display +]%; FG: [+ urban_middle_FG_display +]%, FF: [+ urban_middle_FF_display +]%, Labour: [+ urban_middle_labour_display +]% 
+Urban Middle Class: IRSP: [+ urban_middle_IRSP +]%, Officials: [+ urban_middle_Officials +]%, Provisionals: [+ urban_middle_provisionals +]%, Independent Republicans: [+ urban_middle_IR +]%; FG: [+ urban_middle_FG +]%, FF: [+ urban_middle_FF +]%, Labour: [+ urban_middle_labour +]% 
 
-Small Farmers and Rural labourers: IRSP: [+ poor_rural_IRSP_display +]%, Officials: [+ poor_rural_Officials_display +]%, Provisionals: [+ poor_rural_provisionals_display +]%, Independent Republicans: [+ poor_rural_IR_display +]%; FG: [+ poor_rural_FG_display +]%, FF: [+ poor_rural_FF_display +]%, Labour: [+ poor_rural_labour_display +]% 
+Small Farmers and Rural labourers: IRSP: [+ poor_rural_IRSP +]%, Officials: [+ poor_rural_Officials +]%, Provisionals: [+ poor_rural_provisionals +]%, Independent Republicans: [+ poor_rural_IR +]%; FG: [+ poor_rural_FG +]%, FF: [+ poor_rural_FF +]%, Labour: [+ poor_rural_labour +]% 
 
-Big Farmers: IRSP: [+ middle_rural_IRSP_display +]%, Officials: [+ middle_rural_Officials_display +]%, Provisionals: [+ middle_rural_provisionals_display +]%, Independent Republicans: [+ middle_rural_IR_display +]%; FG: [+ middle_rural_FG_display +]%, FF: [+ middle_rural_FF_display +]%, Labour: [+ middle_rural_labour_display +]% 
+Big Farmers: IRSP: [+ middle_rural_IRSP +]%, Officials: [+ middle_rural_Officials +]%, Provisionals: [+ middle_rural_provisionals +]%, Independent Republicans: [+ middle_rural_IR +]%; FG: [+ middle_rural_FG +]%, FF: [+ middle_rural_FF +]%, Labour: [+ middle_rural_labour +]% 
 
-Industrialists and the Wealthy: IRSP: [+ rich_IRSP_display +]%, Officials: [+ rich_Officials_display +]%, Provisionals: [+ rich_provisionals_display +]%, Independent Republicans: [+ rich_IR_display +]%; FG: [+ rich_FG_display +]%, FF: [+ rich_FF_display +]%, Labour: [+ rich_labour_display +]% 
+Industrialists and the Wealthy: IRSP: [+ rich_IRSP +]%, Officials: [+ rich_Officials +]%, Provisionals: [+ rich_provisionals +]%, Independent Republicans: [+ rich_IR +]%; FG: [+ rich_FG +]%, FF: [+ rich_FF +]%, Labour: [+ rich_labour +]% 
 
-Unemployed: IRSP: [+ unemployed_IRSP_display +]%, Officials: [+ unemployed_Officials_display +]%, Provisionals: [+ unemployed_provisionals_display +]%, Independent Republicans: [+ unemployed_IR_display +]%; FG: [+ unemployed_FG_display +]%, FF: [+ unemployed_FF_display +]%, Labour: [+ unemployed_labour_display +]% 
+Unemployed: IRSP: [+ unemployed_IRSP +]%, Officials: [+ unemployed_Officials +]%, Provisionals: [+ unemployed_provisionals +]%, Independent Republicans: [+ unemployed_IR +]%; FG: [+ unemployed_FG +]%, FF: [+ unemployed_FF +]%, Labour: [+ unemployed_labour +]% 
 
 The Six Counties:
 
