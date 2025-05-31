@@ -26,7 +26,7 @@ Many retired members of the Republican left sympathise with our views and are in
 subtitle: -1 paramilitary resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: catholics_spd += 6*(1-dissent); para_resources -= 1
+on-arrival: catholics_spd += 6*(1-dissent); resources -= 1
 
 The order to kill Seán Garland has been given. Many in the INLA are pleased by this decision as they are hungry for blood.
 
