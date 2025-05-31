@@ -206,9 +206,9 @@ Free State:
 
 Workers: IRSP: [+ workers_IRSP +]%, Officials: [+ workers_Officials +]%, Provisionals: [+ workers_provisionals +]%, Independent Republicans: [+ workers_IR +]%; FG: [+ workers_FG +]%, FF: [+ workers_FF +]%, Labour: [+ workers_labour +]% 
 
-Urban Middle Class: IRSP: [+ urban_middle_IRSP +]%, Officials: [+ urban_middle_Officials +]%, Provisionals: [+ urban_middle_provisionals +]%, Independent Republicans: [+ urban_middle_IR +]%; FG: [+ urban_middle_FG +]%, FF: [+ urban_middle_FF +]%, Labour: [+ urban_middle_labour +]% 
+Middle Class: IRSP: [+ urban_middle_IRSP +]%, Officials: [+ urban_middle_Officials +]%, Provisionals: [+ urban_middle_provisionals +]%, Independent Republicans: [+ urban_middle_IR +]%; FG: [+ urban_middle_FG +]%, FF: [+ urban_middle_FF +]%, Labour: [+ urban_middle_labour +]% 
 
-Small Farmers and Rural labourers: IRSP: [+ poor_rural_IRSP +]%, Officials: [+ poor_rural_Officials +]%, Provisionals: [+ poor_rural_provisionals +]%, Independent Republicans: [+ poor_rural_IR +]%; FG: [+ poor_rural_FG +]%, FF: [+ poor_rural_FF +]%, Labour: [+ poor_rural_labour +]% 
+Small Farmers: IRSP: [+ poor_rural_IRSP +]%, Officials: [+ poor_rural_Officials +]%, Provisionals: [+ poor_rural_provisionals +]%, Independent Republicans: [+ poor_rural_IR +]%; FG: [+ poor_rural_FG +]%, FF: [+ poor_rural_FF +]%, Labour: [+ poor_rural_labour +]% 
 
 Big Farmers: IRSP: [+ middle_rural_IRSP +]%, Officials: [+ middle_rural_Officials +]%, Provisionals: [+ middle_rural_provisionals +]%, Independent Republicans: [+ middle_rural_IR +]%; FG: [+ middle_rural_FG +]%, FF: [+ middle_rural_FF +]%, Labour: [+ middle_rural_labour +]% 
 
@@ -218,4 +218,28 @@ Unemployed: IRSP: [+ unemployed_IRSP +]%, Officials: [+ unemployed_Officials +]%
 
 The Six Counties:
 
-Support for the Republic: [+ pro_republic_disp +]%
+Catholic Workers: IRSP: [+ catholic_workers_IRSP +]%, Officials: [+ catholic_workers_Officials +]%, Provisionals: [+ catholic_workers_provisionals +]%, Independent Republicans: [+ catholic_workers_IR +]%; SDLP: [+ catholic_workers_sdlp +]%, Alliance: [+ catholic_workers_alliance +]%, NILP: [+ catholic_workers_NILP +]%, UUP: [+ catholic_workers_UUP +]%, DUP: [+ catholic_workers_DUP +]%, Vanguard: [+ catholic_workers_Vanguard +]% 
+
+Protestant Workers: IRSP: [+ protestant_workers_IRSP +]%, Officials: [+ protestant_workers_Officials +]%, Provisionals: [+ protestant_workers_provisionals +]%, Independent Republicans: [+ protestant_workers_IR +]%; SDLP: [+ protestant_workers_sdlp +]%, Alliance: [+ protestant_workers_alliance +]%, NILP: [+ protestant_workers_NILP +]%, UUP: [+ protestant_workers_UUP +]%, DUP: [+ protestant_workers_DUP +]%, Vanguard: [+ protestant_workers_Vanguard +]% 
+
+Other Workers: IRSP: [+ other_workers_IRSP +]%, Officials: [+ other_workers_Officials +]%, Provisionals: [+ other_workers_provisionals +]%, Independent Republicans: [+ other_workers_IR +]%; SDLP: [+ other_workers_sdlp +]%, Alliance: [+ other_workers_alliance +]%, NILP: [+ other_workers_NILP +]%, UUP: [+ other_workers_UUP +]%, DUP: [+ other_workers_DUP +]%, Vanguard: [+ other_workers_Vanguard +]% 
+
+Big Catholic Farmers: IRSP: [+ catholic_middle_rural_IRSP +]%, Officials: [+ catholic_middle_rural_Officials +]%, Provisionals: [+ catholic_middle_rural_provisionals +]%, Independent Republicans: [+ catholic_middle_rural_IR +]%; SDLP: [+ catholic_middle_rural_sdlp +]%, Alliance: [+ catholic_middle_rural_alliance +]%, NILP: [+ catholic_middle_rural_NILP +]%, UUP: [+ catholic_middle_rural_UUP +]%, DUP: [+ catholic_middle_rural_DUP +]%, Vanguard: [+ catholic_middle_rural_Vanguard +]%
+
+Small Catholic Farmers: IRSP: [+ catholic_poor_rural_IRSP +]%, Officials: [+ catholic_poor_rural_Officials +]%, Provisionals: [+ catholic_poor_rural_provisionals +]%, Independent Republicans: [+ catholic_poor_rural_IR +]%; SDLP: [+ catholic_poor_rural_sdlp +]%, Alliance: [+ catholic_poor_rural_alliance +]%, NILP: [+ catholic_poor_rural_NILP +]%, UUP: [+ catholic_poor_rural_UUP +]%, DUP: [+ catholic_poor_rural_DUP +]%, Vanguard: [+ catholic_poor_rural_Vanguard +]%
+
+Catholic Middle Class: IRSP: [+ catholic_middle_urban_IRSP +]%, Officials: [+ catholic_middle_urban_Officials +]%, Provisionals: [+ catholic_middle_urban_provisionals +]%, Independent Republicans: [+ catholic_middle_urban_IR +]%; SDLP: [+ catholic_middle_urban_sdlp +]%, Alliance: [+ catholic_middle_urban_alliance +]%, NILP: [+ catholic_middle_urban_NILP +]%, UUP: [+ catholic_middle_urban_UUP +]%, DUP: [+ catholic_middle_urban_DUP +]%, Vanguard: [+ catholic_middle_urban_Vanguard +]%
+
+Big Protestant Farmers: IRSP: [+ protestant_middle_rural_IRSP +]%, Officials: [+ protestant_middle_rural_Officials +]%, Provisionals: [+ protestant_middle_rural_provisionals +]%, Independent Republicans: [+ protestant_middle_rural_IR +]%; SDLP: [+ protestant_middle_rural_sdlp +]%, Alliance: [+ protestant_middle_rural_alliance +]%, NILP: [+ protestant_middle_rural_NILP +]%, UUP: [+ protestant_middle_rural_UUP +]%, DUP: [+ protestant_middle_rural_DUP +]%, Vanguard: [+ protestant_middle_rural_Vanguard +]%
+
+Small Protestant Farmers: IRSP: [+ protestant_poor_rural_IRSP +]%, Officials: [+ protestant_poor_rural_Officials +]%, Provisionals: [+ protestant_poor_rural_provisionals +]%, Independent Republicans: [+ protestant_poor_rural_IR +]%; SDLP: [+ protestant_poor_rural_sdlp +]%, Alliance: [+ protestant_poor_rural_alliance +]%, NILP: [+ protestant_poor_rural_NILP +]%, UUP: [+ protestant_poor_rural_UUP +]%, DUP: [+ protestant_poor_rural_DUP +]%, Vanguard: [+ protestant_poor_rural_Vanguard +]%
+
+Protestant Middle Class: IRSP: [+ protestant_middle_urban_IRSP +]%, Officials: [+ protestant_middle_urban_Officials +]%, Provisionals: [+ protestant_middle_urban_provisionals +]%, Independent Republicans: [+ protestant_middle_urban_IR +]%; SDLP: [+ protestant_middle_urban_sdlp +]%, Alliance: [+ protestant_middle_urban_alliance +]%, NILP: [+ protestant_middle_urban_NILP +]%, UUP: [+ protestant_middle_urban_UUP +]%, DUP: [+ protestant_middle_urban_DUP +]%, Vanguard: [+ protestant_middle_urban_Vanguard +]%
+
+Unemployed: IRSP: [+ north_unemployed_IRSP +]%, Officials: [+ north_unemployed_Officials +]%, Provisionals: [+ north_unemployed_provisionals +]%, Independent Republicans: [+ north_unemployed_IR +]%; SDLP: [+ north_unemployed_sdlp +]%, Alliance: [+ north_unemployed_alliance +]%, NILP: [+ north_unemployed_NILP +]%, UUP: [+ north_unemployed_UUP +]%, DUP: [+ north_unemployed_DUP +]%, Vanguard: [+ north_unemployed_Vanguard +]%
+
+Industrialists and the Wealthy: IRSP: [+ north_rich_IRSP +]%, Officials: [+ north_rich_Officials +]%, Provisionals: [+ north_rich_provisionals +]%, Independent Republicans: [+ north_rich_IR +]%; SDLP: [+ north_rich_sdlp +]%, Alliance: [+ north_rich_alliance +]%, NILP: [+ north_rich_NILP +]%, UUP: [+ north_rich_UUP +]%, DUP: [+ north_rich_DUP +]%, Vanguard: [+ north_rich_Vanguard +]%
+
+Support for Republicanism in the six counties: [+ 30 +]%
+
+Support for Republicanism in the south: [+ 46 +]%
